@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UFT-8'?>
+<pautas>
+    <stud studentn='A12345'>
+        <name>Ana Silva</name>
+        <exame1>15</exame1>
+        <exame2>17</exame2>
+    </stud>
+    <stud studentn='A54321'>
+        <name>Mária Fonseca</name>
+        <exame1>11</exame1>
+        <exame2>7</exame2>
+    </stud>
+    <stud studentn='A44556'>
+        <name>António Abreu</name>
+        <exame1>14</exame1>
+        <exame2>13</exame2>
+    </stud>
+    <stud studentn='A85734'>
+        <name>Amélia Lourenço</name>
+        <exame1>8</exame1>
+        <exame2>12</exame2>
+    </stud>
+    <stud studentn='A33321'>
+        <name>Alice Guedes</name>
+        <exame1>9</exame1>
+        <exame2>6</exame2>
+    </stud>
+</pautas>

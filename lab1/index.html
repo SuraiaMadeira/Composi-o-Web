@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="container">
+            <img src="./assets/img/binarios.jpg" alt="logo" id="logo_img">
+            <nav>
+                <ul id="menu">
+                    <a href="./pages/aprender.html"><li class="list">Aprender HTML</li></a>
+                    <a href="./pages/tutorial.html"><li class="list">Tutoriais</li></a>
+                     <a href="./pages/dicas.html"><li class="list">Dicas</li></a>
+                    <a href="./pages/contacte-nos.html"><li class="list"></li>Contacte-nos</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <table>
+                <tr>
+                    <th class="coluna">
+                        <h2 id="titulo1">Aprender HTML</h2>
+                        <div id="div_image">
+                            <img src="./assets/img/aprenderweb.jpg" alt="Aprender HTML" id="html_img">
+                             <p id="des">Desenvolvimento de uma página HTML. Siga as dicas abaixo indicadas para a construção deste website</p> 
+                        </div>      
+                    </th>
+                    <th rowspan="2">
+                        <h2 id="Tutoriais">Tutoriais de HTML</h2>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/D-h8L5hgW-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="coluna">
+                        <h2 class="dicas_html">Dicas HTML</h2>
+                        <ul>
+                            <li class="canvas">A imagem do header foi criada em https://www.canva.com/</li>
+                            <li>Podem obter uma palete de cores através de aplicações online, como por exemplo hp://www.colourco.de/</li>
+                            <li>O Menu deverá ser feito através de uma lista não ordenada. Para ter o aspeto pretendido devem atribuir os seguintes eslos:
+                                <ul>
+                                    <li>display: inline</li>
+                                    <li>list-style-type: none</li>
+                                    <li>text-decoraon:none</li>
+                                </ul> 
+                                <li>Aprender HTML / Dicas e os Tutoriais deverão estar inseridos em uma tabela 2x2. A coluna Dicas deverá ocupar 70% da largura da
+                                    página. A coluna Tutoriais deve ocupar 2 linhas</li>
+                                    <li>Os Tutoriais são iframes com vídeos do youtube</li>
+                                    <li>O formulário de contacto está inserido num div. Deverá atribuir ao div os seguintes eslos:</li>
+                                    <ul>
+                                        <li>background-color: whitesmoke</li>
+                                        <li>padding-le:100</li>
+                                        <li>padding-top:30</li>
+                                    </ul>
+                                    <li>Os inputs do formulário deverão ter uma class associada que tenha a seguinte configuração:
+                                        <ul>
+                                            <li>width: 40%</li>
+                                            <li>line-height: 30px</li>
+                                        </ul>
+                                    </li>
+                        <th>
+                        </th>
+                    </th>
+                 </tr>
+            </table>
+            <div id="form">
+                <h3>Contacte-nos</h3><br>
+                <h4>Envie-nos a sua dúvida ou sugestão</h4><br>
+
+                <form  action="">
+                    <label for="Nome">Nome</label><br>
+                    <input class="input" type="text" placeholder="Insira o seu nome"><br>
+                    <label for="email">Email</label><br>
+                    <input  class="input" type="email" placeholder="Insira o seu email"><br>
+                    <label for="telemovél">Telemovél</label><br>
+                    <input class="input" type="telemovél" placeholder="Insira o seu telemovél"><br>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Indique-nos a sua dúvida"></textarea>
+                    <h4>Qual a razão do seu contacto?</h4>
+                    <select class="input" name=""id="">
+                        <option value="Pedido de Informação">Pedido de Informação</option>
+                        <option value="Reclamação">Reclamação</option>
+                    </select>
+
+                    <h5>Como prefere ser contactado:</h5><br>
+                    <input type="checkbox">
+                    <label for="Telemóvel">Telemovél</label><br>
+                    <input type="checkbox">
+                    <label for="Email">Email</label><br>
+                    <label for="datetime">Data de Contacto</label>
+                    <input class="button" type="datetime" placeholder="dd/mm/aaaa --:--"><br>
+                    <input class="button" type="button" value="Submeter">
+                    <input class="button" type="button" value="Cancelar">
+                </form>
+            </div>
+        </main>
+         <footer id="footer" class="container">
+            <p>copyright &copy 2022</p>
+        </footer>
+    </body>
+</html>

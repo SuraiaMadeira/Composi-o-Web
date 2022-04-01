@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Form</title>
+        <style>
+            #form{
+                border: 100px solid rgb(85, 83, 83);
+                margin-top: 1050apx;
+                margin-bottom: 10px;
+                margin-right: 150px;
+                margin-left: 80px;
+                background-color: rgba(241, 248, 250, 0.822);
+                padding-left: 1%;
+                border-radius:22px;
+            }
+            input[type="text"],
+        select {
+        width: 80%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        }
+
+        input[type="email"],
+        select {
+        width: 80%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+}
+            #button{
+                background-color:rgb(87, 182, 238);
+            
+        }
+    
+            
+     </style>
+    </head>
+    <body id="body" >
+    <div id="form">
+    <form  action=""><br>
+        <label for="Nome">Primeiro Nome</label><br>
+        <input class="input" type="text" placeholder="Diga-nos o seu nome"><br><br>
+        <label for="email">Email</label><br><br>
+        <input  class="input" type="email" placeholder="Qual o seu email"><br><br>
+        &nbsp; <label for="pais">País</label><br><br>
+            &nbsp; <select name="pais" id="pais" required> 
+                    <option value="pais">Guiné-Bisau</option>
+                    <option value="pais">Portugal</option>
+                    <option value="pais">Italia</option>
+                    <option value="pais">Holanda</option>
+                    <option value="pais">Alemanha</option>
+                    <option value="pais">Espanha</option>
+            </select> <br><br>
+        <label for="historia">História</label><br><br>
+        <textarea class="input" name="" id="" cols="30" rows="10" placeholder="Conte-nos a sua istória"></textarea><br>
+        <button id="button" type="submit">Enviar</button><br><br><br>
+    </form>   
+</div>
+</body>
+<footer></footer>

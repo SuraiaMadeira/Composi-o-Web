@@ -1,0 +1,71 @@
+*{
+   margin: 0; 
+}
+.container{
+    margin:4% 4% 0 4%;
+}
+#logo_img{ 
+    width:100%;
+    height: 500px;
+    
+}
+#html_img{
+    width: 20%;
+}
+#menu{
+    background-color: rgba(27, 25, 25, 0.829);
+    height: 35px;
+    margin: 1% 0;
+    padding-top: 1%;
+}
+.list{
+    color: aliceblue;
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 1%;
+}
+
+#titulo1{
+    color: rgb(19, 16, 218);
+}
+.dicas_html{
+    color: blue;
+}
+#form{
+    background-color: whitesmoke (131, 125, 125);
+    padding-left: 100px;
+    padding-top: 30px;
+}
+.input{
+    width: 40%;
+    line-height: 30px;
+    margin: 1% 0;
+}
+.button{
+    margin: 1% 0;
+}
+#footer{
+    background-color: rgba(27, 25, 25, 0.829);
+    color: aliceblue;
+    height: 35px;
+    text-align: center;
+    padding-top: 1%;
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+#Tutoriais{
+    color: blue;
+}
+.coluna{
+    margin-bottom: -4%;
+    text-align: left;
+}
+#des{
+    margin-inline: 21%;
+    margin-top: -67px;
+    }
+#div_image{
+        float: left;
+        padding: 10px
+ }
