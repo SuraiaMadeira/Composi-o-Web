@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body style="align-items: center;">
+
+
+    <h1>Idades</h1>
+    <p>Nº participantes:</p>
+    <p id="nparticipantes"></p>
+    <p>Média de idades:</p>
+    <p id="IdadeMedia"></p>
+    <p>Idade Minima:</p>
+    <p id="idadeMin"></p>
+    <p>Idade Máxima:</p>
+    <p id="idadeMax"></p>
+    <button onclick="main()">Começar Registro</button>
+</body>
+<script>
+    function main() {
+        var nParticipantes = prompt("Digite o número de participantes: ");
+        var n_pessoas = nParticipantes;
+        nParticipantes = 0;
+        var totalIdades = [];
+        var soma = 0;
+        var mediaIdades = 0;
+        while (nParticipantes < n_pessoas) {
+            var idade = prompt("Digite a idade do participante " + nParticipantes + ":");
+            totalIdades.push(idade);
+            nParticipantes++;
+        }
+        if (nParticipantes == n_pessoas) {
+            if (confirm("Registrou todas as idades?") == true) {
+                for (i = 0; i < totalIdades.length; i++) {
+                    soma = soma + totalIdades[i];
+                }
+                 mediaIdades = n_pessoas / soma;
+
+            } else {
+                userPreference = "Idades não registadas!";
+            }
+        }
+       
+    
+      
+        
+        var idadeMinima = Math.min.apply(Math, totalIdades);
+        var idadeMaxima =  Math.max.apply(Math, totalIdades);
+       
+        document.getElementById('nparticipantes').innerHTML = n_pessoas;
+        document.getElementById('IdadeMedia').innerHTML = mediaIdades;
+        document.getElementById('idadeMin').innerHTML = idadeMinima;
+        document.getElementById('idadeMax').innerHTML = idadeMaxima;
+
+    }
+
+
+</script>
+
+</html>

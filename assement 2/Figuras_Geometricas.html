@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+</head>
+
+<body>
+    <table border="1" align="center">
+        <th>
+            <h2>Figuras Geométricas</h2>
+            <form method="get">
+                <input type="text" id="input" />
+                <input type="submit" id="submit" value="Enviar" />
+            </form>
+        </th>
+    </table>
+
+    <script>
+        let lados = "0";
+        let text;
+        let sufixo = "gono";
+
+        function poligono(lados) {
+            switch (lados) {
+                case "3":
+                    text = "Triângulo";
+                    break;
+                case "4":
+                    text = "Quadrilátero";
+                    break;
+                case "5":
+                    text = "Penta" + sufixo;
+                    break;
+                case "6":
+                    text = "Hexa" + sufixo;
+                    break;
+                case "7":
+                    text = "Hepta" + sufixo;
+                    break;
+                case "8":
+                    text = "Octa" + sufixo;
+                    break;
+                case "9":
+                    text = "Enea" + sufixo;
+                    break;
+                case "10":
+                    text = "Deca" + sufixo;
+                    break;
+                default:
+                    text = "Nº de lados deve ser um valor compreendido entre 3 e 10";
+                    break;
+            }
+        }
+
+        document.getElementById("submit").onclick = function(e) {
+            console.log(document.getElementById("input").value);
+            poligono(document.getElementById("input").value);
+            e.preventDefault();
+            console.log(text);
+        }
+    </script>
+</body>
+
+</html>

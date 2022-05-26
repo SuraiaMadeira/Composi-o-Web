@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens / Heróis</title>
+</head>
+
+<body>
+
+
+    <script>
+        let citacaoCaptain = "Perdemos amigos. Perdemos família. Perdemos uma parte de nós. Hoje, nós temos uma chance de voltar atrás.";
+        let citacaoHomem = "As vezes é preciso aprender a correr antes de começar a andar.";
+        let citacaoAranha = "Grandes poderes trazem grandes responsabilidades.";
+        final = "Não temos nenhuma citação sobre essa personagem / herói";
+
+        function quote(heroi) {
+            if (heroi == "capitao america") {
+                return citacaoCaptain;
+            } else if (heroi == "homem de ferro") {
+                return citacaoHomem;
+            } else if (heroi == "homem aranha") {
+                return citacaoAranha;
+            }
+            return final;
+        }
+
+
+        console.log(quote("capitao america"))
+        console.log(quote("homem de ferro"))
+        console.log(quote("homem aranha"))
+        console.log(quote("sss"))
+    </script>
+</body>
+
+</html>
