@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
     <title>Quiz</title>
 </head>
 
 <body>
-    <input type="text" id="username">
-    <input type="email" id="email">
-    <input type="password" id="senha">
-    <input type="button" value="Registar" onclick="registar();">
-
+    <form>
+        <input type="text" id="username" name="username" required>
+        <input type="email" id="email" name="email" required>
+        <input type="password" id="senha" name="senha" required>
+        <input type="button" value="Registar" id="registo">
+    </form>
 
     <script>
         fetch('http://localhost:3006/')
@@ -26,31 +28,32 @@
                 console.log(error);
             })
 
+        $(document).ready(function(){
+            $("#registo").click(function(){
+                let username = $("#username").val();
+                let email = $("#email").val();
+                let senha = $("#senha").val();
 
-        /*
-
-        function registar() {
-
-            let username = document.getElementById('username').value;
-            let email = document.getElementById('email').value;
-            let senha = document.getElementById('senha').value;
-
-            data = {
-                username: document.getElementById('username').value,
-                email: document.getElementById('email').value,
-                senha: document.getElementById('senha').value,
-            }
-            fetch('localhost:3006/registo', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'aplication/json',
-                },
-                body: JSON.stringify(data)
-
-            }).then(response => {
-                alert(email)
-            })
-        }*/
+                if( username == '' || username.length < 5 ){
+                    alert('Escreva o teu nome corretamente, mínimo 5 letras');
+                } else if( email == '' || email.length < 10 ){
+                    alert('Escreva o teu email corretamente, mínimo 5 letras');
+                } else if ( senha == '' || senha.length < 6 ){
+                    alert('Escreva a senha corretamente, mínimo 6 letras');
+                }
+                $.post("http://localhost:3006/registo",
+                    {
+                        username: username,
+                        senha: senha, 
+                        email: email
+                    }, 
+                    function(data){
+                        if(data === 'yes') {
+                            alert("login success");
+                        }
+                });
+            });
+        });
     </script>
 </body>
 
