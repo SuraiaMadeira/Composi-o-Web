@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <input type="text" id="username">
+    <input type="email" id="email">
+    <input type="password" id="senha">
+    <input type="button" value="Registar" onclick="registar();">
+
+
+    <script>
+        fetch('http://localhost:3006/').then(response => response.json()).then(function(data) {
+            data.forEach((index, element) => {
+
+                console.log(element)
+            })
+        }).catch(error => {
+            console.log(error);
+        })
+
+
+        /*
+
+        function registar() {
+
+            let username = document.getElementById('username').value;
+            let email = document.getElementById('email').value;
+            let senha = document.getElementById('senha').value;
+
+            data = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                senha: document.getElementById('senha').value,
+            }
+            fetch('localhost:3006/registo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'aplication/json',
+                },
+                body: JSON.stringify(data)
+
+            }).then(response => {
+                alert(email)
+            })
+        }*/
+    </script>
+</body>
+
+</html>
