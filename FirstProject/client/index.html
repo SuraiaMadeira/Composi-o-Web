@@ -16,14 +16,15 @@
 
 
     <script>
-        fetch('http://localhost:3006/').then(response => response.json()).then(function(data) {
-            data.forEach((index, element) => {
-
-                console.log(element)
+        fetch('http://localhost:3006/')
+            .then(response => response.json())
+            .then(function(data) {
+                    data.forEach((index, element) => {
+                })
+                console.log(data);
+            }).catch(error => {
+                console.log(error);
             })
-        }).catch(error => {
-            console.log(error);
-        })
 
 
         /*

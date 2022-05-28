@@ -6,14 +6,22 @@ const port = 3006;
 
 const app = express();
 app.use(cors());
-app.use(express.static('../client/'))
 
 app.get('/', (request, response) => {
-    response.json({
-        "nome": "Madeira",
-        "email": "Madeira",
-        "senha": "Madeira",
-    });
+    response.json(
+        [
+            aluno1 = {
+                "nome": "Madeira",
+                "email": "Madeira",
+                "senha": "Madeira",
+            },
+            aluno2 = {
+                "nome": "Madeira",
+                "email": "Madeira",
+                "senha": "Madeira",
+            }
+        ]
+    );
 
 });
 
