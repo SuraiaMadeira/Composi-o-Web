@@ -1,0 +1,52 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: blueviolet;
+        height: 50px;
+        color: bisque;
+    }
+    
+    .info {
+        margin: 0.7% 0;
+    }
+    
+    .info {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .info,
+    #paginaInicial,
+    #perguntas {
+        text-align: center;
+    }
+    
+    #paginaInicial h1 {
+        margin: 5%;
+        font-weight: bold;
+    }
+    
+    #paginaInicial p {
+        font-size: 22px;
+    }
+    
+    #tempo {
+        float: right
+    }
+    
+    label {
+        margin: 0.5% 1%;
+    }
+    
+    .btn {
+        margin-top: 4%;
+        padding: 1%;
+        width: 10%;
+        background-color: blueviolet;
+        font-weight: bold;
+        color: whitesmoke;
+    }
