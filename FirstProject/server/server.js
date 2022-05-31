@@ -21,19 +21,26 @@ app.get('/', (request, response) => {
 });
 
 app.get('/quiz', (request, response) => {
+
+    myDatabase.query('SELECT * FROM respostas WHERE pergunta_id = 1 ', (error, results) => {
+        console.log(results);
+
+    })
+
     myDatabase.query('SELECT * FROM pergunta WHERE pergunta_id =?', [1], (error, results) => {
-            var titulo = results[0].titulo;
-            var pontuacao = results[0].pontuacao;
-            var resposta_certa = 'resposta certa é a x';
+            let titulo = results[0].titulo;
+            let pontuacao = results[0].pontuacao;
+            let resposta_certa = 'resposta certa é a x';
+
             if (results.length > 0) {
-                console.log(titulo)
+                //console.log(titulo)
                 response.json({
                     respostas: {
                         titulo: titulo,
                         resultado: resposta_certa,
                         pontuacao: pontuacao,
                         resposta: {
-                            resposta_0: titulo,
+                            //resposta_0: titulo,
                             resposta_1: 'Nauru e China ',
                             resposta_2: 'Mônaco e Canadá',
                             resposta_3: 'Malta e Estados Unidos',

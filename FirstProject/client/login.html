@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <form>
+    <form class="form">
         <input type="email" id="email" name="email" required>
-        <input type="password" id="senha" name="senha" required>
+        <input type="password" idgi="senha" name="senha" required>
         <input type="button" value="Login" id="login">
     </form>
 
@@ -37,7 +37,7 @@
                 } else if (senha == '') {
                     alert('Escreva a senha corretamente, mínimo 6 letras');
                 }
-                $.post("http://localhost:3006/login", {
+                $.get("http://localhost:3006/login", {
                         email: email,
                         senha: senha,
                     },
