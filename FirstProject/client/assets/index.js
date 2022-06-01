@@ -22,8 +22,9 @@ fetch('http://localhost:3006/quiz')
             /* Função para calcular a duração do jogo */
             document.getElementById('botaoResponder').addEventListener('click', function(event) {
                 event.preventDefault();
+                alert()
                 let respostaSelecionada = document.querySelector('input[name="resposta"]:checked').value;
-                alert('Malta e Estados Unidos ' + 'tem: ' + 'Malta e Estados Unidos'.length + '\n' + respostaSelecionada + 'tem: ' + respostaSelecionada.length)
+                console.log('Malta e Estados Unidos ' + 'tem: ' + 'Malta e Estados Unidos'.length + '\n' + respostaSelecionada + 'tem: ' + respostaSelecionada.length)
                 if ((respostaSelecionada.length) == 'Malta e Estados Unidos'.length) {
                     if (respostaSelecionada.localeCompare('Malta e Estados Unidos') != -1) {
                         document.getElementById('respostaCerta').innerText = 'Resposta Está correcta';
